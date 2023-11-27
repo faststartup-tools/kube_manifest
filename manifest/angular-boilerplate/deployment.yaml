@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: angular-boilerplate
-        image: docker pull ghcr.io/faststartup-tools/angular-boilerplate:build-10
+        image: ghcr.io/faststartup-tools/angular-boilerplate:build-10
         ports:
         - containerPort: 80
 
