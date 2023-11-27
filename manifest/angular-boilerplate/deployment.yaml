@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular-boilerplate
+spec:
+  selector:
+    matchLabels:
+      app: angular-boilerplate
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: angular-boilerplate
+    spec:
+      containers:
+      - name: angular-boilerplate
+        image: 598880949918.dkr.ecr.us-east-2.amazonaws.com/angular-boilerplate:build-7
+        ports:
+        - containerPort: 80
+
