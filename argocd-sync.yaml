@@ -2,15 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: angular-boilerplate
+  
 spec:
+  project: default
+
   source:
     repoURL: 'https://github.com/faststartup-tools/kube_manifest.git'
     path: manifest/angular-boilerplate
     targetRevision: HEAD
-    # Reference to the Git credential secret
-    repoURLSecret:
-      name: argocd-git-credentials
-      key: password
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: angular-boilerplate
