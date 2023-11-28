@@ -19,5 +19,5 @@ spec:
         - containerPort: 80
 
       imagePullSecrets:
-     - name: ghcr-secret
+       - name: ghcr-secret
 
