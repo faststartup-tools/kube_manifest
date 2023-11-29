@@ -16,7 +16,7 @@ spec:
       - name: nextjs-boilerplate
         image: ghcr.io/faststartup-tools/nextjs-boilerplate:build-1
         ports:
-        - containerPort: 80
+        - containerPort: 3000
 
       imagePullSecrets:
        - name: ghcr-secret
