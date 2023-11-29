@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nextjs-boilerplate
+spec:
+  selector:
+    matchLabels:
+      app: nextjs-boilerplate
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nextjs-boilerplate
+    spec:
+      containers:
+      - name: nextjs-boilerplate
+        image: ghcr.io/faststartup-tools/nextjs-boilerplate:build-11
+        ports:
+        - containerPort: 80
+
+      imagePullSecrets:
+       - name: ghcr-secret
+
