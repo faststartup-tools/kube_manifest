@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: angular-boilerplate-service
+  name: angular-boilerplate-service2
 spec:
   selector:
     app: angular-boilerplate
