@@ -4,7 +4,7 @@ metadata:
   name: angular-boilerplate-service
 annotations:
   service.beta.kubernetes.io/aws-load-balancer-type: "alb"
-  service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "app=angular-boilerplate"
+  # service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "app=angular-boilerplate"
 spec:
   selector:
     app: angular-boilerplate
