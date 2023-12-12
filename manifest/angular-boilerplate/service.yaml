@@ -7,7 +7,6 @@ metadata:
 spec:
   selector:
     app: angular-boilerplate
-  type: LoadBalancer
   ports:
     - port: 80
       protocol: TCP
