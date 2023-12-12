@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: angular-boilerplate-service
-annotations:
-  service.beta.kubernetes.io/aws-load-balancer-type: "alb"
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "alb"
     # service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "app=angular-boilerplate"
 spec:
   selector:
@@ -13,5 +13,5 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 80
-  
+
 
