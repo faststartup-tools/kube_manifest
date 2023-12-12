@@ -2,9 +2,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: angular-boilerplate-service
-annotations:
-  service.beta.kubernetes.io/aws-load-balancer-type: "alb"
-  # service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "app=angular-boilerplate"
+# annotations:
+#   service.beta.kubernetes.io/aws-load-balancer-type: "alb"
+#   # service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "app=angular-boilerplate"
 spec:
   selector:
     app: angular-boilerplate
